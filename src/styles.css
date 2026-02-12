@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #111827;
+  color: #f3f4f6;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  min-height: 100vh;
+}
+
+.panel {
+  border-right: 1px solid #1f2937;
+  padding: 1.25rem;
+  background: #0f172a;
+}
+
+.panel h1 {
+  margin: 0 0 0.75rem;
+  font-size: 1.25rem;
+}
+
+.panel p {
+  margin: 0 0 1rem;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.upload {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.upload span {
+  display: inline-flex;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  background: #2563eb;
+  cursor: pointer;
+}
+
+.upload input {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.crop-controls {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.crop-controls h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.crop-controls label {
+  display: grid;
+  grid-template-columns: 52px 1fr 60px;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.crop-controls input {
+  width: 100%;
+}
+
+.stage-wrap {
+  display: grid;
+  place-items: center;
+  padding: 1.25rem;
+}
+
+.stage {
+  border: 1px solid #1f2937;
+  background: #030712;
+}
